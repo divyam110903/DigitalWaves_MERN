@@ -8,7 +8,7 @@ This is a full-stack web application built with:
 ---
 
 
-### 🔧 Step 1: Install Dependencies
+### 🔧 
 
 ```bash
 # Install root devDependencies
