@@ -3,17 +3,6 @@ import { Quotation } from '../models/Contact.js';
 import SendMail from '../helpers/sendMail.js';
 const router = express.Router();
 
-// router.post('/contact', async (req, res) => {
-//   try {
-   
-//     console.log("Incoming request:", req.body); 
-//     const newQuote = await Quotation.create(req.body); 
-//     return res.json({msg:"success",newquote:newQuote})
-//   } catch (error) {
-//     console.error("QUOTATION SAVE ERROR:", error);
-//     res.status(500).json({ error: error.message });
-//   }
-// });
 
 
 router.post('/contact', async (req, res) => {

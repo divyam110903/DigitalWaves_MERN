@@ -6,7 +6,7 @@ function Numbers() {
   if (loading) return <p className="mt-10 text-xl text-center">Loading...</p>;
   if (!values || values.length === 0)
     return <p className="mt-10 text-xl text-center">No data found.</p>;   
-   const data = values[0];
+   const data = values;
   return (
     
     <div className="mt-20 px-52">

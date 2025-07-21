@@ -7,6 +7,8 @@ import AboutRouter from "./src/Routes/AboutRouter.js";
 import ContactRouter from "./src/Routes/ContactRouter.js";
 import ClientRouter from "./src/Routes/ClientRouter.js";
 import HomeRouter from "./src/Routes/HomeRouter.js";
+import AdminRouter from "./src/Routes/AdminRouter.js";
+import QuoteRouter from './src/Routes/QuoteRouter.js';
 dotenv.config(); 
 
 const app = express();
@@ -21,9 +23,13 @@ app.use(cors({
 
 app.use("/", DwRoutes);
 app.use("/api/about", AboutRouter);
-app.use("/api/contact",ContactRouter);
 app.use("/api/client", ClientRouter);
+app.use("/api/data",ClientRouter);
 app.use("/api/home",HomeRouter);
+app.use("/api/admin",AdminRouter);
+app.use("/api/contact",ContactRouter);
+app.use("/api", QuoteRouter);
+
 
 const startServer = async () => {
   try {
